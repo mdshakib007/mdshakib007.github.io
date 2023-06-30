@@ -6,7 +6,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .flex-center{
@@ -26,14 +26,14 @@
     font-family: sans-serif;
     font-size: 1rem;
     color: black;
-    background-image: linear-gradient(45deg, rgb(214, 241, 195), rgb(254, 174, 255));
+    background-image: linear-gradient(45deg, rgb(195, 218, 241), rgb(253, 116, 255));
     padding: 10px;
     border-radius: 20px;
     transition: font-size 0.7s;
 }
 
 .btn:hover{
-    background-image: linear-gradient(45deg, rgb(212, 246, 188), rgb(253, 146, 255));
+    background-image: linear-gradient(45deg, rgb(195, 218, 241), rgb(253, 116, 255));
     font-size: 1.5rem;
 }
 
@@ -62,6 +62,37 @@
     box-shadow: 0.3rem 0.7rem 0.4rem rgb(88, 88, 88);
 }
 
+.box{
+    height: 300px;
+    width: 30%;
+    background-image: linear-gradient(55deg, rgb(92, 160, 255), rgb(105, 100, 255));
+    margin: 2%;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.5rem rgb(207, 207, 207);
+    transition: all 0.1s;
+}
+
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: 0.3rem 0.4rem 0.6rem rgb(195, 195, 195);
+}
+
+.box-2{
+    height: 600px;
+    width: 50%;
+    background-image: linear-gradient(55deg, rgb(150, 236, 255), rgb(117, 135, 255));
+    margin: 4%;
+    border-radius: 5px;
+    box-shadow: 0.3rem 0.4rem 0.5rem rgb(207, 207, 207);
+    transition: all 0.1s;
+}
+
+.space{
+    height: 500px;
+    width: 100%;
+    background-image: url('./Images/menu.png');
+    background-repeat: no-repeat;
+}
 
 
 
@@ -75,13 +106,15 @@ nav{
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 9999;
+    background-color: rgba(95, 100, 253, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
 }
 
 .nav_items{
     min-height: 10vh;
-    background-color: rgb(255, 242, 242);
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .nav_list{
@@ -90,6 +123,7 @@ nav{
 
 .nav_link{
     font-size: 1.3rem;
+    padding: 5px 20px;
     text-decoration: none;
     color: black;
     transition: all 0.7s ease;
@@ -98,12 +132,13 @@ nav{
 .nav_link:hover{
     border-bottom: 3px solid rgb(255, 140, 0);
     font-size: 1.5rem;
+    background-color: rgba(249, 225, 255, 0.3);
+    border-radius: 10px;
 }
 
 .header{
     padding: 1rem 0;
     height: 80vh;
-    background: url(./Images/back.jpg) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -112,6 +147,10 @@ nav{
 
 
 /* header section started */
+.name{
+    color: rgb(255, 136, 0);
+}
+
 .head{
     text-align: center;
     background-image: url("./Images/exp-bg.png");
@@ -126,8 +165,9 @@ nav{
 }
 
 .head p{
-    border-bottom: 1px solid rgb(208, 255, 18);
-    padding-bottom: 50px;
+    border-bottom: 2px solid rgb(255, 180, 18);
+    padding-bottom: 5px;
+    
 }
 
 .head a{
@@ -139,12 +179,73 @@ nav{
     width: 60%;
 }
 
-
-
 /* header section ends */
 
 
-/* contact info  */
+
+/* about page start here  */
+.line{
+    height: 7px;
+    width: 70px;
+    background-image: linear-gradient(55deg, rgb(0, 157, 255), rgb(187, 0, 255));
+    border-radius: 5px;
+}
+
+.about-text{
+    padding: 10px;
+}
+
+.first-skill{
+
+}
+
+.last-skill{
+
+}
+
+.about-text p{
+    margin-left: 10px;
+}
+
+.about-text ul{
+    margin-left: 40px;
+}
+
+#contact-info{
+    margin-left: 60px;
+}
+
+#contact-info{
+    padding: 5px;
+}
+
+.contact-link{
+    text-decoration: none;
+    color: black;
+}
+
+.service-content{
+    padding: 10px;
+}
+
+.service-content ul{
+    padding-left: 20px;
+}
+
+.service-icon{
+    padding: 10px;
+}
+
+/* about page ends here  */
+
+
+
+
+
+
+
+
+/* contact info here  */
 
 .contact{
     height: 500px;
@@ -188,6 +289,7 @@ nav{
     margin: 20px 0px;
 }
 
+/* contact section ends  */
 
 
 
@@ -200,7 +302,7 @@ nav{
 
 .footer{
     padding: 1rem;
-    background-color: rgb(255, 242, 242);
+    background-color: rgba(142, 142, 142, 0.5);
     min-height: 10vh;
     color: rgb(0, 0, 0);
     font-size: 1.1rem;
@@ -249,6 +351,15 @@ nav{
 
     .contact{
         width: 90%;
+    }
+
+    .box{
+        width: 90%;
+    }
+
+    .box-2{
+        width: 90%;
+        height: 700px;
     }
 }
 
