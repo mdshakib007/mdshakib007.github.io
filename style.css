@@ -43,7 +43,8 @@
     background-color: #e8aa42;
     color: #fff;
     align-items: center;
-    padding: 10px 20px;
+    padding: 12px 40px;
+    border: 0px;
     border-radius: 2px;
     transition: all 0.7s ease;
 }
@@ -53,7 +54,7 @@
 }
 
 .card{
-    box-shadow: 0.3rem 0.3rem 0.3rem rgb(99, 99, 99);
+    box-shadow: 0.2rem 0.2rem 0.7rem rgb(99, 99, 99);
     border-radius: 10px;
     transition: all 1s;
 }
@@ -65,7 +66,7 @@
 .box{
     height: 300px;
     width: 30%;
-    background-image: linear-gradient(55deg, rgb(92, 160, 255), rgb(105, 100, 255));
+    background-image: linear-gradient(55deg, rgb(92, 160, 255), rgb(136, 100, 255));
     margin: 2%;
     border-radius: 1rem;
     box-shadow: 0.3rem 0.4rem 0.5rem rgb(207, 207, 207);
@@ -85,13 +86,6 @@
     border-radius: 5px;
     box-shadow: 0.3rem 0.4rem 0.5rem rgb(207, 207, 207);
     transition: all 0.1s;
-}
-
-.space{
-    height: 500px;
-    width: 100%;
-    background-image: url('./Images/menu.png');
-    background-repeat: no-repeat;
 }
 
 
@@ -184,6 +178,12 @@ nav{
 
 
 /* about page start here  */
+.about{
+    background-image: url("./Images/dream-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 .line{
     height: 7px;
     width: 70px;
@@ -239,7 +239,60 @@ nav{
 /* about page ends here  */
 
 
+/* resume page here  */
+.resume header{
+    padding: 50px 30px;
+}
 
+.side-line{
+    width: 10px;
+    height: 550px;
+    border-radius: 5px;
+    background-image: linear-gradient(45deg, red, blue);
+    margin: 20px 50px;
+}
+
+
+.timeline{
+    background-color: #ffffff;
+    transition: all 4s;
+}
+
+.timeline:hover{
+    background-color: rgb(114, 112, 255);
+    border-radius: 30px;
+}
+
+.education{
+    background-image: url('./Images/down-arrow.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+}
+
+.padding{
+    padding: 60px 20px;
+}
+
+.padding h5{
+    color: rgb(255, 106, 0);
+}
+
+.experience{
+    background-image: url("./Images/exp-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.extra-info{
+    padding: 30px 40px;
+    background-image: linear-gradient(100deg, rgb(72, 72, 72), rgb(0, 0, 0));
+    border-radius: 30px;
+    margin: 20px 30px;
+    color: white;
+}
+
+/* resume page ends  */
 
 
 
@@ -316,6 +369,12 @@ nav{
 
 /* footer section ends here  */
 
+@media (max-width: 1100px) {
+    .box{
+        height: 400px;
+    }
+}
+
 
 @media (max-width: 992px) {
     .flex-space-around{
@@ -361,6 +420,37 @@ nav{
         width: 90%;
         height: 700px;
     }
+
+    .experience{
+        align-items: normal;
+    }
+
+    .space{
+        height: 500px;
+        width: 100%;
+    }
+    
+    .box{
+        height: 350px;
+    }
+
+    .education{
+        background-image: none;
+    }
+
+    .side-line{
+        height: 750px;
+        width: 10px;
+    }
 }
 
+@media (max-width: 700px) {
+    .space{
+        height: 300px;
+        width: 100%;
+    }
 
+    .box{
+        height: 300px;
+    }
+}
