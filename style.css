@@ -23,13 +23,12 @@
 
 .btn{
     text-decoration: none;
-    font-family: sans-serif;
     font-size: 1rem;
     color: black;
     background-image: linear-gradient(45deg, rgb(195, 218, 241), rgb(253, 116, 255));
     padding: 10px;
-    border-radius: 20px;
-    transition: font-size 0.7s;
+    border-radius: 50%;
+    transition: all 0.5s;
 }
 
 .btn:hover{
@@ -149,6 +148,11 @@ nav{
     color: rgb(255, 136, 0);
 }
 
+.quick-links a{
+    text-decoration: none;
+    color: black;
+}
+
 .head{
     text-align: center;
     background-image: url("./Images/exp-bg.png");
@@ -197,14 +201,6 @@ nav{
 
 .about-text{
     padding: 10px;
-}
-
-.first-skill{
-
-}
-
-.last-skill{
-
 }
 
 .about-text p{
@@ -551,9 +547,11 @@ svg{
 
     #menu_icon{
         display: block;
-        text-align: center;
+        text-align: left;
         cursor: pointer;
         margin: 1rem;
+        position: sticky;
+        z-index: 9999;
     }
 
     .hidden{
@@ -609,6 +607,10 @@ svg{
         width: 10px;
     }
 
+    .quick-links{
+        flex-direction: row;
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -621,4 +623,11 @@ svg{
         height: 300px;
     }
 
+    .quick-links a{
+        padding: 10px 10px;
+    }
+
+    .end{
+        font-size: 13px;
+    }
 }
