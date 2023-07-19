@@ -104,9 +104,9 @@ nav{
     top: 0;
     left: 0;
     z-index: 9999;
-    background-color: rgba(95, 100, 253, 0.2);
-    backdrop-filter: blur(20px);
-    border-radius: 10px;
+    background-color: rgba(100, 100, 100, 0);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
 }
 
 .nav_items{
@@ -120,16 +120,18 @@ nav{
 
 .nav_link{
     font-size: 1.3rem;
+    font-family: 'Helvetica', sans-serif;
     padding: 5px 20px;
     text-decoration: none;
     color: black;
+    font-weight: 700;
     transition: all 0.7s ease;
 }
 
 .nav_link:hover{
     border-bottom: 3px solid rgb(255, 140, 0);
     font-size: 1.5rem;
-    background-color: rgba(249, 225, 255, 0.3);
+    background-color: rgba(100, 125, 155, 0.1);
     border-radius: 10px;
 }
 
@@ -538,18 +540,35 @@ svg{
 }
 
 
-@keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+/* navbar animation starts */
+
+@keyframes navbar-open {
+  from {
+    transform: translateY(-100%);
   }
-  
-.animation-class{
-    animation: fade-in 0.5s ease-in;
+  to {
+    transform: translateY(0);
+  }
 }
+
+.navbar-open-animation {
+  animation: navbar-open 0.5s ease-in;
+}
+
+@keyframes navbar-close {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.navbar-close-animation {
+  animation: navbar-close 0.5s ease-out;
+}
+
+/* navbar animation ends */
   
 
 @media (max-width: 992px) {
