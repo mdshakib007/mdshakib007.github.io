@@ -65,7 +65,7 @@
 .box{
     height: 300px;
     width: 30%;
-    background-image: linear-gradient(55deg, rgb(92, 160, 255), rgb(136, 100, 255));
+    background-image: linear-gradient(55deg, rgb(97, 160, 247), rgb(172, 100, 255));
     margin: 2%;
     border-radius: 1rem;
     box-shadow: 0.3rem 0.4rem 0.5rem rgb(207, 207, 207);
@@ -180,7 +180,7 @@ nav{
 }
 
 .developer-img img{
-    width: 60%;
+    width: 100%;
 }
 
 /* header section ends */
@@ -294,164 +294,7 @@ nav{
 /* resume page ends  */
 
 
-/* progress bar here  */
-.skills-preview{
-    background: #e3edf7;
-    border: 10px;
-    border-style: solid;
-    border-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 140, 255)) 1;
-    border-radius: 2rem;
-    margin: 20px;
-}
-
-.skill{
-    width: 160px;
-    height: 160px;
-    margin: 50px 50px;
-    position: relative;
-}
-
-.skill h2{
-    color: rgb(255, 102, 0);
-    padding: 10px;
-}
-
-.outer{
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-    padding: 20px;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-               -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-}
-
-.inner{
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-}
-
-#number{
-    font-weight: 600;
-    color: #555;
-}
-
-circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 17px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-}
-
-#python{
-    animation: py 3s linear forwards;
-}
-
-#tkinter{
-    animation: tkinter 3s linear forwards;
-}
-
-#numpy{
-    animation: numpy 3s linear forwards;
-}
-
-#git{
-    animation: git 3s linear forwards;
-}
-
-#sql{
-    animation: sql 3s linear forwards;
-}
-
-#html{
-    animation: html 3s linear forwards;
-}
-
-#css{
-    animation: css 3s linear forwards;
-}
-
-#js{
-    animation: js 3s linear forwards;
-}
-
-#java{
-    animation: java 3s linear forwards;
-}
-
-
-
-svg{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-@keyframes py{
-    100%{
-        stroke-dashoffset: 61;
-    }
-}
-
-@keyframes tkinter{
-    100%{
-        stroke-dashoffset: 47;
-    }
-}
-
-@keyframes numpy{
-    100%{
-        stroke-dashoffset: 240;
-    }
-}
-
-@keyframes git{
-    100%{
-        stroke-dashoffset: 75;
-    }
-}
-
-@keyframes sql{
-    100%{
-        stroke-dashoffset: 118;
-    }
-}
-
-@keyframes html{
-    100%{
-        stroke-dashoffset: 151;
-    }
-}
-
-@keyframes css{
-    100%{
-        stroke-dashoffset: 269;
-    }
-}
-
-@keyframes js{
-    100%{
-        stroke-dashoffset: 401;
-    }
-}
-
-@keyframes java{
-    100%{
-        stroke-dashoffset: 377;
-    }
-}
-
-
-
+/* progress bar starts  */
 
 
 /* progress bar ends  */
@@ -536,6 +379,10 @@ svg{
 
     .contact{
         width: 70%;
+    }
+
+    .developer-img img{
+        width: 90%;
     }
 }
 
@@ -649,6 +496,10 @@ svg{
         flex-direction: row;
     }
 
+    .developer-img img{
+        width: 70%;
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -667,5 +518,9 @@ svg{
 
     .end{
         font-size: 14px;
+    }
+
+    .developer-img img{
+        width: 60%;
     }
 }
