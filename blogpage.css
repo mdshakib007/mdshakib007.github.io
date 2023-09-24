@@ -1,5 +1,5 @@
 .blog-box{
-    margin: 100px 300px;
+    margin: 100px 500px;
     padding: 10px 10px;
 }
 
@@ -14,9 +14,9 @@
 }
 
 .card-img-top{
-    height: 340px;
-    width: 80%;
-    margin: 5px 100px;
+    height: 700px;
+    width: 99%;
+    margin: 5px;
     border-radius: 10px;
 }
 
@@ -97,6 +97,6 @@
 @media (max-width:900px) {
     
     .blog-box{
-        margin: 20px 30px;
+        margin: 1px 1px;
     }
 }
