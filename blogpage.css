@@ -14,9 +14,10 @@
 }
 
 .card-img-top{
-    height: 380px;
-    width: 380px;
-    margin: 10px 10px;
+    height: 340px;
+    width: 80%;
+    margin: 5px 100px;
+    border-radius: 10px;
 }
 
 .normal-btn{
@@ -47,6 +48,10 @@
     color: rgb(0, 0, 0);
 }
 
+.pg-btn:hover{
+    background-color: antiquewhite;
+}
+
 .footer{
     padding: 1rem;
     background-color: rgba(200, 200, 200, 0.6);
@@ -59,6 +64,14 @@
     padding: 12px 20px;
     font-size: 1rem;
     margin-left: 5px;
+}
+
+@media (max-width: 1500px) {
+    .card-img-top{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
 }
 
 @media (max-width: 1300px) {
