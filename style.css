@@ -114,7 +114,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 9999;
-    background-color: rgba(100, 100, 100, 0);
+    background-color: rgba(154, 131, 255, 0.159);
     backdrop-filter: blur(5px);
     border-radius: 5px;
 }
@@ -135,7 +135,7 @@ nav {
     text-decoration: none;
     color: black;
     font-weight: 700;
-    transition: all 0.7s ease;
+    transition: all 0.7s;
 }
 
 .nav_link:hover {

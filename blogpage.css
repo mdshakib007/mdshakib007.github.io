@@ -5,11 +5,24 @@ body {
     padding: 0;
 }
 
+/* Flex Container for Layout */
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Container for Blog Posts */
 .blog-box {
     margin: 30px auto;
     padding: 10px 20px;
-    max-width: 800px; 
+    max-width: 800px;
 }
 
 /* Cards for Blog Posts */
@@ -40,9 +53,10 @@ body {
     transform: scale(0.96);
 }
 
-.title{
-    margin: 130px 0;
-    align-items: center;
+.card-title {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: bolder;
+    color: #4e4e4e;
 }
 
 /* Button Styles */
@@ -55,18 +69,25 @@ body {
     margin: 5px 0;
     border: 0;
     border-radius: 2px;
-    transition: background-color 0.7s ease;
+    transition: all 0.7s ease;
 }
 
 .normal-btn:hover {
     background-color: #333;
 }
 
-/* Flex Container for Layout */
-.flex-space-around {
-    display: flex;
-    justify-content: space-around;
+.button-1{
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
     align-items: center;
+    border-radius: 2px;
+}
+
+.button-1:hover{
+    background-color: rgb(181, 181, 181);
+    color: white;
 }
 
 /* Footer Styles */
@@ -84,30 +105,18 @@ body {
     margin-left: 5px;
 }
 
-.carousel {
-    max-width: 800px; 
-    max-height: 400px; 
-    margin: 0 auto; 
-}
-
-.carousel-item img {
-    max-width: 100%; 
-    height: auto; 
-    padding: 50px 5px;
-}
-
-
 /* Responsive Design */
 @media (max-width: 991px) {
     .blog-box {
         margin: 30px 10px;
     }
-    .footer{
+
+    .footer {
         flex-direction: column;
         font-size: 0.6rem;
     }
-    .footer input{
+
+    .footer input {
         padding: 5px 5px;
     }
-  
 }
