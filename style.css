@@ -6,7 +6,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -16,7 +16,6 @@
 
     --jet: hsl(289, 94%, 53%);
     --light-gray: hsl(0, 0%, 84%);
-    
 }
 
 .flex-center {
@@ -35,14 +34,18 @@
     text-decoration: none;
     font-size: 1rem;
     color: black;
-    background-image: linear-gradient(45deg, rgb(195, 218, 241), rgb(253, 116, 255));
+    background-image: linear-gradient(45deg,
+            rgb(195, 218, 241),
+            rgb(253, 116, 255));
     padding: 10px;
     border-radius: 50%;
     transition: all 0.5s;
 }
 
 .btn:hover {
-    background-image: linear-gradient(45deg, rgb(195, 218, 241), rgb(253, 116, 255));
+    background-image: linear-gradient(45deg,
+            rgb(195, 218, 241),
+            rgb(253, 116, 255));
     font-size: 1.5rem;
 }
 
@@ -75,7 +78,9 @@
 .box {
     height: 300px;
     width: 30%;
-    background-image: linear-gradient(55deg, rgb(97, 160, 247), rgb(172, 100, 255));
+    background-image: linear-gradient(55deg,
+            rgb(97, 160, 247),
+            rgb(172, 100, 255));
     margin: 2%;
     border-radius: 1rem;
     box-shadow: 0.3rem 0.4rem 0.5rem rgb(207, 207, 207);
@@ -83,25 +88,31 @@
 }
 
 .box:hover {
-    transform: scale(1.05);
-    box-shadow: 0.3rem 0.4rem 0.6rem rgb(195, 195, 195);
+
+    transform: translateY(-10px);
+    box-shadow: 0.1rem 0.2rem 1rem rgb(153, 131, 255);
 }
 
 .box-2 {
     height: 600px;
-    width: 50%;
-    background-image: linear-gradient(55deg, rgb(150, 236, 255), rgb(117, 135, 255));
+    width: 60%;
+    background-image: linear-gradient(55deg,
+            rgb(150, 236, 255),
+            rgb(117, 135, 255));
     margin: 4%;
     border-radius: 5px;
     box-shadow: 0.3rem 0.4rem 0.5rem rgb(207, 207, 207);
     transition: all 0.1s;
 }
 
+.box-2:hover{
+    transform: translate(5px);
+}
+
 .title {
     margin: 10px 50px;
     margin-top: 50px;
 }
-
 
 /* navbar starts  */
 #menu_icon {
@@ -114,8 +125,8 @@ nav {
     top: 0;
     left: 0;
     z-index: 9999;
-    background-color: rgba(154, 131, 255, 0.159);
-    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.159);
+    backdrop-filter: blur(10px);
     border-radius: 5px;
 }
 
@@ -130,18 +141,17 @@ nav {
 
 .nav_link {
     font-size: 1.3rem;
-    font-family: 'Helvetica', sans-serif;
+    font-family: "Helvetica", sans-serif;
     padding: 5px 20px;
     text-decoration: none;
     color: black;
     font-weight: 700;
-    transition: all 0.7s;
+    transition: all 0.2s;
 }
 
 .nav_link:hover {
     border-bottom: 3px solid rgb(255, 140, 0);
-    font-size: 1.5rem;
-    background-color: rgba(100, 125, 155, 0.1);
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 10px;
 }
 
@@ -154,11 +164,11 @@ nav {
 
 /* navbar ends  */
 
-
-
 /* header section started */
-.name {
-    color: rgb(255, 136, 0);
+.gradient {
+    background: -webkit-linear-gradient(45deg, #00f7ff, #b300ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .quick-links a {
@@ -182,7 +192,6 @@ nav {
 .head p {
     border-bottom: 2px solid rgb(255, 180, 18);
     padding-bottom: 5px;
-
 }
 
 .head a {
@@ -200,8 +209,6 @@ nav {
 }
 
 /* header section ends */
-
-
 
 /* about page start here  */
 .about {
@@ -256,7 +263,6 @@ nav {
 
 /* about page ends here  */
 
-
 /* resume page here  */
 
 .side-line {
@@ -266,7 +272,6 @@ nav {
     background-image: linear-gradient(45deg, red, blue);
     margin: 20px 50px;
 }
-
 
 .timeline {
     background-color: #ffffff;
@@ -278,7 +283,7 @@ nav {
 }
 
 .education {
-    background-image: url('./Images/down-arrow.png');
+    background-image: url("./Images/down-arrow.png");
     background-repeat: no-repeat;
     background-position: right;
     display: flex;
@@ -300,14 +305,13 @@ nav {
 
 .extra-info {
     padding: 30px 40px;
-    background-image: linear-gradient(100deg, rgb(110, 110, 110), rgb(0, 0, 0));
+    background-image: linear-gradient(100deg, rgb(0, 0, 0), rgb(112, 112, 112));
     border-radius: 10px;
     margin: 20px 30px;
     color: white;
 }
 
 /* resume page ends  */
-
 
 /* progress bar starts  */
 
@@ -320,10 +324,8 @@ nav {
     list-style: none;
 }
 
-
 .skills-item {
     margin: 20px;
-
 }
 
 .skill .title-wrapper {
@@ -359,20 +361,17 @@ nav {
     padding-top: 45px;
     margin: 20px 30px;
     border-radius: 10px;
-    box-shadow: 0.3rem 0.2rem 0.4rem rgb(148, 148, 148);;
+    box-shadow: 0.3rem 0.2rem 0.4rem rgb(148, 148, 148);
     cursor: pointer;
     z-index: 1;
 }
 
-.h5{
+.h5 {
     text-transform: capitalize;
     color: white;
 }
 
-
 /* progress bar ends  */
-
-
 
 /* contact info here  */
 
@@ -387,7 +386,7 @@ nav {
     background-color: #ffffff;
 }
 
-textarea{
+textarea {
     resize: none;
     padding: 10px;
     padding-top: 20px;
@@ -420,7 +419,6 @@ textarea{
     width: 1rem;
 }
 
-
 .btn2 {
     border: none;
     padding: 7px;
@@ -429,14 +427,11 @@ textarea{
 
 /* contact section ends  */
 
-
-
 /* footer section starts here  */
 .end a {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
-
 
 .footer {
     padding: 1rem;
@@ -473,7 +468,6 @@ textarea{
     }
 }
 
-
 /* navbar animation starts */
 
 @keyframes navbar-open {
@@ -505,7 +499,6 @@ textarea{
 }
 
 /* navbar animation ends */
-
 
 @media (max-width: 992px) {
     nav {
@@ -550,7 +543,7 @@ textarea{
         width: 95%;
     }
 
-    .items{
+    .items {
         size: 30;
     }
 
@@ -593,7 +586,7 @@ textarea{
         width: 70%;
     }
 
-    .extra-info{
+    .extra-info {
         padding: 10px 10px;
         margin: 10px 10px;
     }

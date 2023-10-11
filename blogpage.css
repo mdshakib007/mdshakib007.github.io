@@ -5,6 +5,13 @@ body {
     padding: 0;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 /* Flex Container for Layout */
 .flex-space-around {
     display: flex;
@@ -12,7 +19,7 @@ body {
     align-items: center;
 }
 
-.flex-center{
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +83,7 @@ body {
     background-color: #333;
 }
 
-.button-1{
+.button-1 {
     border: none;
     padding: 5px 15px;
     cursor: pointer;
@@ -85,7 +92,7 @@ body {
     border-radius: 2px;
 }
 
-.button-1:hover{
+.button-1:hover {
     background-color: rgb(181, 181, 181);
     color: white;
 }
@@ -118,5 +125,9 @@ body {
 
     .footer input {
         padding: 5px 5px;
+    }
+
+    img {
+        width: 80%;
     }
 }
