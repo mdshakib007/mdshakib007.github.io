@@ -16,3 +16,17 @@ menuIcon.addEventListener('click', () => {
     menuIcon.classList.remove('fa-times');
   }
 });
+
+// JavaScript to show and hide the popup
+const showPopupButton = document.getElementById('showPopup');
+const popup = document.getElementById('popup');
+const closeBtn = document.getElementById('closeBtn');
+
+showPopupButton.addEventListener('click', (event) => {
+    event.stopPropagation(); // Stop the click event from propagating to the parent element
+    popup.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+});

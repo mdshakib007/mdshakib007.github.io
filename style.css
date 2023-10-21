@@ -9,15 +9,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-:root {
-    --text-gradient-yellow: linear-gradient(to right,
-            hsl(210, 87%, 43%),
-            hsl(35, 100%, 68%));
-
-    --jet: hsl(289, 94%, 53%);
-    --light-gray: hsl(0, 0%, 84%);
-}
-
 .flex-center {
     display: flex;
     align-items: center;
@@ -33,17 +24,17 @@
 .normal-btn {
     display: inline-block;
     text-decoration: none;
-    background-color: #e8aa42;
+    background-color: #3b6cf2;
     color: #fff;
     align-items: center;
     padding: 12px 40px;
     border: 0px;
     border-radius: 2px;
-    transition: all 0.7s ease;
+    transition: all 0.7s;
 }
 
 .normal-btn:hover {
-    background-color: #333;
+    background-color: #00b3ff;
 }
 
 .card {
@@ -86,14 +77,42 @@
     transition: all 0.1s;
 }
 
-.box-2:hover{
-    transform: translate(5px);
-}
-
 .title {
     margin: 10px 50px;
     margin-top: 50px;
 }
+
+/* Styles for the custom pop-up window */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
 
 /* navbar starts  */
 #menu_icon {
@@ -106,7 +125,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 9999;
-    background-color: rgba(255, 255, 255, 0.159);
+    background-color: rgba(41, 148, 255, 0.159);
     backdrop-filter: blur(10px);
     border-radius: 5px;
 }
@@ -147,7 +166,7 @@ nav {
 
 /* header section started */
 .gradient {
-    background: -webkit-linear-gradient(45deg, #00f7ff, #b300ff);
+    background: -webkit-linear-gradient(45deg, #00c3ff, #aa00ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -159,9 +178,8 @@ nav {
 
 .head {
     text-align: center;
-    background-image: url("./Images/exp-bg.png");
-    background-repeat: no-repeat;
-    background-color: #dcdcdc;
+    background-color: rgba(41, 148, 255, 0.159);
+    height: auto;
 }
 
 .head h1 {
@@ -192,11 +210,6 @@ nav {
 /* header section ends */
 
 /* about page start here  */
-.about {
-    background-image: url("./Images/dream-bg.png");
-    background-repeat: no-repeat;
-    background-position: right;
-}
 
 .line {
     height: 7px;
@@ -250,13 +263,13 @@ nav {
     width: 10px;
     height: 550px;
     border-radius: 5px;
-    background-image: linear-gradient(45deg, red, blue);
+    background-image: linear-gradient(45deg, rgb(0, 255, 251), rgb(115, 0, 255));
     margin: 20px 50px;
 }
 
 .timeline {
     background-color: #ffffff;
-    transition: all 4s;
+    transition: all 5s;
 }
 
 .timeline:hover {
@@ -264,8 +277,6 @@ nav {
 }
 
 .education {
-    background-image: url("./Images/down-arrow.png");
-    background-repeat: no-repeat;
     background-position: right;
     display: flex;
 }
@@ -276,12 +287,6 @@ nav {
 
 .padding h5 {
     color: rgb(255, 106, 0);
-}
-
-.experience {
-    background-image: url("./Images/exp-bg.png");
-    background-repeat: no-repeat;
-    background-position: left;
 }
 
 .extra-info {
@@ -317,20 +322,22 @@ nav {
 }
 
 .skill .title-wrapper data {
-    color: var(--light-gray);
+    color: hsl(0, 0%, 84%);
     font-size: 13px;
     font-weight: 300;
 }
 
 .skill-progress-bg {
-    background: var(--jet);
+    background: hsl(289, 94%, 53%);
     width: 100%;
     height: 8px;
     border-radius: 10px;
 }
 
 .skill-progress-fill {
-    background: var(--text-gradient-yellow);
+    background: linear-gradient(to right,
+    hsl(210, 87%, 43%),
+    hsl(35, 100%, 68%));
     height: 100%;
     border-radius: inherit;
 }
@@ -345,11 +352,6 @@ nav {
     box-shadow: 0.3rem 0.2rem 0.4rem rgb(148, 148, 148);
     cursor: pointer;
     z-index: 1;
-    transition: all 0.3s;
-}
-
-.content-card:hover{
-    transform: rotateY(10deg);
 }
 
 .h5 {
@@ -362,8 +364,8 @@ nav {
 /* contact info here  */
 
 .contact {
-    height: 600px;
     width: 50%;
+    height: auto;
     margin: 20px;
 }
 
@@ -374,8 +376,7 @@ nav {
 
 textarea {
     resize: none;
-    padding: 10px;
-    padding-top: 20px;
+    padding: 10px 10px;
     font-size: 1rem;
     border-radius: 5px;
     margin: 5px;
@@ -386,8 +387,7 @@ textarea {
 }
 
 .items input {
-    padding: 10px;
-    padding-top: 20px;
+    padding: 10px 10px;
     font-size: 1rem;
     border-radius: 5px;
     margin: 5px;
@@ -407,7 +407,7 @@ textarea {
 }
 
 .btn2 {
-    margin-top: 30px;
+    margin: 20px 0;
     border-radius: 10px;
     transition: all 0.3s;
 }
@@ -426,7 +426,7 @@ textarea {
 
 .footer {
     padding: 1rem;
-    background-color: rgba(142, 142, 142, 0.5);
+    background-color: rgba(41, 148, 255, 0.159);
     min-height: 10vh;
     color: rgb(0, 0, 0);
     font-size: 1.1rem;
@@ -472,21 +472,21 @@ textarea {
 }
 
 .navbar-open-animation {
-    animation: navbar-open 0.5s ease-in;
+    animation: navbar-open 0.5s;
 }
 
 @keyframes navbar-close {
     from {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateY(-100%);
     }
 }
 
 .navbar-close-animation {
-    animation: navbar-close 0.5s ease-out;
+    animation: navbar-close 0.5s;
 }
 
 /* navbar animation ends */
@@ -539,11 +539,11 @@ textarea {
     }
 
     .box {
-        width: 90%;
+        width: 85%;
     }
 
     .box:hover{
-        transform: scale(1.05);
+        transform: scale(1.03);
     }
 
     .box-2 {
@@ -556,7 +556,7 @@ textarea {
     }
 
     .space {
-        height: 300px;
+        height: 100px;
         width: 100%;
     }
 
@@ -569,8 +569,7 @@ textarea {
     }
 
     .side-line {
-        height: 750px;
-        width: 10px;
+        height: auto;
     }
 
     .quick-links {
