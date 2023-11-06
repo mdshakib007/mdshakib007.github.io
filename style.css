@@ -50,10 +50,9 @@
 .box {
     height: 300px;
     width: 30%;
-    cursor: pointer;
     background-image: linear-gradient(55deg,
-            rgb(97, 160, 247),
-            rgb(106, 0, 255));
+            rgb(97, 197, 247),
+            rgb(156, 143, 255));
     margin: 2%;
     border-radius: 1rem;
     box-shadow: 0.3rem 0.4rem 0.5rem rgb(207, 207, 207);
@@ -146,7 +145,6 @@ nav {
     text-decoration: none;
     color: black;
     font-weight: 700;
-    letter-spacing: 2px; 
     border-radius: 10px;
     transition: all 0.2s;
 }
@@ -222,6 +220,7 @@ nav {
 
 .about-text {
     padding: 10px;
+    transition: all 0.1s;
 }
 
 .about-text p {
@@ -230,6 +229,10 @@ nav {
 
 .about-text ul {
     margin-left: 40px;
+}
+
+.about-text:hover{
+    transform: scale(1.02);
 }
 
 #contact-info {
@@ -353,7 +356,6 @@ nav {
     margin: 20px 30px;
     border-radius: 10px;
     box-shadow: 0.3rem 0.2rem 0.4rem rgb(148, 148, 148);
-    cursor: pointer;
     z-index: 1;
 }
 
