@@ -96,7 +96,12 @@
 
 .blog-box a:hover{
     background-color: #00b3ff00;
-    transform: translate(20px);
+    transform: translate(10px);
+}
+
+.blog-box h2{
+    padding: 10px;
+    color: rgb(71, 71, 71);
 }
 
 .blog-box h5{
