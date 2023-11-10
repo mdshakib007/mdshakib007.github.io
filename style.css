@@ -56,11 +56,11 @@
     margin: 2%;
     border-radius: 1rem;
     box-shadow: 0.3rem 0.4rem 0.5rem rgb(207, 207, 207);
-    transition: all 0.1s;
+    transition: all 0.2s;
 }
 
 .box:hover {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
     box-shadow: 0.1rem 0.2rem 1rem rgb(153, 131, 255);
 }
 
@@ -73,8 +73,53 @@
     margin: 4%;
     border-radius: 5px;
     box-shadow: 0.3rem 0.4rem 0.5rem rgb(207, 207, 207);
-    transition: all 0.1s;
 }
+
+/* blog box styling  */
+.blog-box{
+    height: auto;
+    width: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    margin: 2%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.blog-box a{
+    background-color: rgba(0, 0, 255, 0);
+    font-weight: bolder;
+    color: rgb(0, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.blog-box a:hover{
+    background-color: #00b3ff00;
+    transform: translate(20px);
+}
+
+.blog-box h5{
+    color: rgb(101, 101, 101);
+    padding: 5px 10px;
+    border: 1px solid rgba(136, 136, 136, 0.313);
+    border-radius: 6px;
+}
+
+.blog-box img{
+    width: 90%;
+    height: auto;
+}
+
+.blog-box h4{
+    color: rgb(90, 90, 90);
+}
+
+.blog-box p{
+    font-size: smaller;
+    color: rgb(46, 46, 46);
+}
+/* blog box styling ends */
 
 .title {
     margin: 10px 50px;
@@ -220,7 +265,7 @@ nav {
 
 .about-text {
     padding: 10px;
-    transition: all 0.1s;
+    cursor: pointer;
 }
 
 .about-text p {
@@ -229,10 +274,6 @@ nav {
 
 .about-text ul {
     margin-left: 40px;
-}
-
-.about-text:hover{
-    transform: scale(1.02);
 }
 
 #contact-info {
@@ -434,7 +475,7 @@ textarea {
 .footer {
     padding: 1rem;
     background-color: rgba(41, 148, 255, 0.159);
-    min-height: 10vh;
+    min-height: 15vh;
     color: rgb(0, 0, 0);
     font-size: 1.1rem;
 }
@@ -461,7 +502,7 @@ textarea {
     }
 
     .box-2 {
-        width: 80%;
+        width: 70%;
         height: auto;
     }
 }
@@ -545,6 +586,10 @@ textarea {
         size: 30;
     }
 
+    .content-card{
+        margin: 20px 20px;
+    }
+
     .box {
         width: 85%;
     }
@@ -558,6 +603,10 @@ textarea {
         height: auto;
     }
 
+    .blog-box{
+        width: 80%;
+    }
+
     .experience {
         align-items: normal;
     }
@@ -569,10 +618,6 @@ textarea {
 
     .box {
         height: 350px;
-    }
-
-    .education {
-        background-image: none;
     }
 
     .side-line {
@@ -589,7 +634,7 @@ textarea {
 
     .extra-info {
         padding: 10px 10px;
-        margin: 10px 10px;
+        margin: 10px 20px;
     }
 }
 
@@ -601,6 +646,10 @@ textarea {
 
     .box {
         height: 300px;
+    }
+
+    .blog-box{
+        width: 90%;
     }
 
     .quick-links a {
