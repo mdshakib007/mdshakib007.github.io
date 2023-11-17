@@ -17,19 +17,6 @@
 
 <body>
 
-    <!-- navbar here  -->
-    <div class="blog-box flex-center">
-        <nav id="menu">
-            <ul class="nav_items">
-                <li class="nav_list"><a class="nav_link" href="#"><i class="fa-solid fa-house fa-2x"></i></a></li>
-                <li class="nav_list"><a class="nav_link" href="#"><i class="fa-solid fa-bolt fa-2x"></i></a></li>
-                <li class="nav_list"><a class="nav_link" href="mailto:shakibahmed.528874@gmail.com"><i
-                            class="fa-solid fa-message fa-2x"></i></a></li>
-            </ul>
-        </nav>
-    </div>
-    <!-- navbar ends here  -->
-
     <!-- main content here  -->
     <main>
         <div class="head blog-box">
@@ -155,9 +142,17 @@
     <!-- main content ends here  -->
 
     <!-- footer content here  -->
-    <footer class="footer">
-        <div class="blog-box flex-center">
-            <h6>&copy; MD Shakib Ahmed 2023, Let's Make A Thought!</h6>
+    <footer class="footer flex-space-around">
+        <form action="">
+            <div class="flex-space-around">
+                <label for="subscribe">Subscribe to my Blog </label>
+                <input type="email" id="subscribe" name="subscribe" class="footer_input"
+                    placeholder="Your E-mail Address" required />
+                <button type="submit" class="normal-btn">Subscribe</button>
+            </div>
+        </form>
+        <div class="end">
+            <h5> &copy; MD Shakib Ahmed 2023, Let's Make A Thought!</h5>
         </div>
     </footer>
     <!-- footer content ends here  -->
