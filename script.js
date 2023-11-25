@@ -17,7 +17,7 @@ menuIcon.addEventListener('click', () => {
   }
 });
 
-// JavaScript to show and hide the popup
+// to show and hide the popup
 const showPopupButton = document.getElementById('showPopup');
 const popup = document.getElementById('popup');
 const closeBtn = document.getElementById('closeBtn');
