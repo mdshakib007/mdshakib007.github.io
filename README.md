@@ -1,13 +1,9 @@
-# MD SHAKIB AHMED <a href="MD_Shakib-Resume.pdf" download="MD_Shakib-Resume.pdf"><button>Download PDF</button></a>
-<tr>
-    <td align="left"><strong> Email:</strong> commonshakib@gmail.com </td>
-    <td align="right"><strong> LinkedIn:</strong> <a href="https://linkedin.com/in/mdshakib00777">mdshakib00777 </a></td>
-  </tr>
-  <tr>
-    <td align="left"><strong> Mobile:</strong> +880 1608897980 </td>
-    <td align="right"><strong> GitHub:</strong> <a href="https://github.com/mdshakib007">mdshakib007 </a></td>
-  </tr>
-</table>
+# Info: [See Latest Portfolio](https://mdshakib007.vercel.app/)
+
+# MD SHAKIB AHMED
+- Email: [shakibahmed.528874@gmail.com](mailto:shakibahmed.528874@gmail.com)
+- LinkedIn: [mdshakib007](https://www.linkedin.com/in/mdshakib00777/)
+- WhatsApp: [Send Message](https://wa.me/8801608897980)
 
 ---
 
